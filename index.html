@@ -37,8 +37,8 @@
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 	      		id: 'mapbox.satellite'
-	}).addTo(mymap);
       });
+      osm.addTo(mapa);
    	    
       // retorna un color con base en la cantidad de especies
       function color(d) {
@@ -107,6 +107,10 @@
 	    
       var baseLayers = {
 	"OpenStreetMap": osm
+      };
+	    
+      var baseLayers = {
+	"MapBox": osm
       };
       var overlays = {
 	"Riqueza de especies": riqueza,
